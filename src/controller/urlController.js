@@ -69,7 +69,7 @@ const CreateShortUrl = async function (req, res) {
 
         if (FindUrl) {
 
-            console.log("Hiii")
+//             console.log("Hiii")
 
             return res.status(201).send({ Status: true, data: FindUrl })
         }
