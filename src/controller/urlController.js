@@ -60,7 +60,7 @@ const CreateShortUrl = async function (req, res) {
         let checkforUrl = await GET_ASYNC(`${longUrl}`)
         if (checkforUrl) {
 
-            console.log("aarey yeh toh redis se aayaa hai")
+//             console.log("aarey yeh toh redis se aayaa hai")
             return res.status(200).send({ status: true, "data": JSON.parse(checkforUrl) })
         }
 
