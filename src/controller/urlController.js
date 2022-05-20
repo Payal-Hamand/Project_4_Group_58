@@ -61,7 +61,7 @@ const CreateShortUrl = async function (req, res) {
         if (checkforUrl) {
 
 //             console.log("aarey yeh toh redis se aayaa hai")
-            return res.status(200).send({ status: true, "data": JSON.parse(checkforUrl) })
+            return res.status(201).send({ status: true, "data": JSON.parse(checkforUrl) })
         }
 
     
