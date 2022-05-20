@@ -128,7 +128,7 @@ const getUrl = async function (req, res) {
         if (!url) {
             return res.status(404).send({ status: false, message: 'url not found' })
         }
-       return res.status(303).redirect(url.longUrl)// 303 redirection status
+       return res.status(302).redirect(url.longUrl)// 303 redirection status
     }
     catch (error) { res.status(500).send({ status: false, message: error.message }) }
 }
